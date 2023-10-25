@@ -25,7 +25,7 @@ spec:
         app.kubernetes.io/instance: rhtap-service-push-test-component
     spec:
       containers:
-      - image: python-image:latest
+      - image: quay.io/redhat-user-workloads-stage/dev-release-team-tenant/rhtap-service-push-test/rhtap-service-push-test-component@sha256:3325cf24ebc7f9d311af0226586f961e688346899b18e90aa607db11d0296917
         name: my-python
         ports:
         - containerPort: 8081
