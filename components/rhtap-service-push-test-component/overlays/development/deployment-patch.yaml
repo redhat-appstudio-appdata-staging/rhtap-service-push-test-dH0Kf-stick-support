@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: rhtap-service-push-test-component
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads-stage/dev-release-team-tenant/rhtap-service-push-test/rhtap-service-push-test-component@sha256:3325cf24ebc7f9d311af0226586f961e688346899b18e90aa607db11d0296917
+        name: my-python
+        resources: {}
+status: {}

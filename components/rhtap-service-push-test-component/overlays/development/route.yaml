@@ -1,0 +1,20 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  creationTimestamp: null
+  labels:
+    app.kubernetes.io/created-by: application-service
+    app.kubernetes.io/instance: rhtap-service-push-test-component
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: rhtap-service-push-test-component
+    app.kubernetes.io/part-of: rhtap-service-push-test
+  name: rhtap-service-push-test-c8n5v
+spec:
+  path: /
+  port:
+    targetPort: 8081
+  to:
+    kind: Service
+    name: rhtap-service-push-test-component
+    weight: null
+status: {}
